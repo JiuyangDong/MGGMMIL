@@ -8,7 +8,7 @@ import logging
 from train_mil import MIL
 
 def parse_args_and_save():
-    parser = argparse.ArgumentParser(description='use occ to make mil explainable')
+    parser = argparse.ArgumentParser(description='')
 
     parser.add_argument("--phase", type=str, default='train')
     parser.add_argument("--seed", type=int, default=0)
