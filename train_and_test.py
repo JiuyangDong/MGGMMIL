@@ -21,6 +21,6 @@ for k in range(1):
         format(args.gpu_id, args.wsi_type, args.pretrain, args.baseline_model, args.lr, k, args.layer, args.KNN, args.L, args.mil_head, args.data_dir)
     os.system(cmd)
 
-    # cmd = 'CUDA_VISIBLE_DEVICES={} python baseline.py --phase test --wsi_type {} --pretrain {} --baseline_model {} --baseline_lr {} --k {} --layer {} --KNN {} --L {} --mil_head {} --data_dir {}'.\
-    #     format(args.gpu_id, args.wsi_type, args.pretrain, args.baseline_model, args.lr, k, args.layer, args.KNN, args.L, args.mil_head, args.data_dir)
-    # os.system(cmd)
+    cmd = 'CUDA_VISIBLE_DEVICES={} python baseline.py --phase test --wsi_type {} --pretrain {} --baseline_model {} --baseline_lr {} --k {} --layer {} --KNN {} --L {} --mil_head {} --data_dir {}'.\
+        format(args.gpu_id, args.wsi_type, args.pretrain, args.baseline_model, args.lr, k, args.layer, args.KNN, args.L, args.mil_head, args.data_dir)
+    os.system(cmd)
